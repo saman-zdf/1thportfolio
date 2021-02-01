@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio || about me</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&family=Nunito:wght@300;400&family=Potta+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header-inner">
+      <div class="container">
+        <nav id="main-nav">
+          <h1 class="logo">SA<span>M</span></h1>
+          <ul class="nav-items">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about me</a></li>
+            <li><a href="work.html">my work</a></li>
+            <li><a href="contact.html" class="current">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- end of header -->
+    <!-- section a contact -->
+    <section id="contact-a" class="text-center py-3">
+      <div class="container">
+        <h2 class="section-title">contact</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">you can reach me here</p>
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <div class="text-fields">
+            <input
+              type="text"
+              class="text-input name-input"
+              placeholder="Add Name"
+              name="name"
+            />
+            <input
+              type="text"
+              class="text-input subject-input"
+              placeholder="Add Subject"
+              name="subject"
+            />
+            <input
+              type="text"
+              class="text-input email-input"
+              placeholder="Add Email"
+              name="email"
+            />
+            <input
+              type="text"
+              class="text-input phone-input"
+              placeholder="phone number"
+              name="phone"
+            />
+            <textarea
+              name="message"
+              class="text-input message-input"
+              placeholder="Message"
+            ></textarea><div data-netlify-recaptcha="true"></div>
+            <div class="my-2">
+
+            </div>
+          </div>
+          <button type="submit" class="btn-light">submit</button>
+        </form>
+      </div>
+    </section>
+    <!-- end of section a contact -->
+    <!-- contact b -->
+    <section id="contact-b" class="py-3">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-envelope fa-2x"></i>
+            <h3>Email</h3>
+            <p>samanfyz68@gamil.com</p>
+          </div>
+          <div>
+            <i class="fas fa-phone fa-2x"></i>
+            <h3>Phone</h3>
+            <p>+61423873747</p>
+          </div>
+          <div>
+            <i class="fas fa-address-card fa-2x"></i>
+            <h3>Address</h3>
+            <p>15 birmigham ave,villawood 2168 NSW</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of contact b -->
+    <!-- contact c -->
+    <section id="contact-c" class="text-center py-4">
+      <div class="about-video-container">
+          <video autoplay loop muted id="about-video-bg">
+            <source src="./img/video/video.mp4" />
+          </video>
+      <div class="container">
+        <h1>lets start your next project</h1>
+      </div>
+    </section>
+    <!-- end of contact c -->
+
+    <!-- footer -->
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <p>copyright &copy;2021,all rights reserved.</p>
+        <div class="social-icon">
+          <i class="fab fa-twitter fa-2x"></i>
+          <i class="fab fa-instagram fa-2x"></i>
+          <i class="fab fa-facebook fa-2x"></i>
+          <i class="fab fa-youtube fa-2x"></i>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+  </body>
+</html>

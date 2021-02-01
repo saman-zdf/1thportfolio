@@ -1,0 +1,115 @@
+// tablet and smaller
+@media (max-width: 800px) {
+  // header
+  #header-home {
+    height: 35rem;
+    .header-content {
+      h1 {
+        font-size: 2.2rem;
+        line-height: 1.5;
+      }
+    }
+  }
+  // home A
+
+  #main-footer {
+    .footer-content {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  #contact {
+    &-c {
+      .about-video-container {
+        &::after {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+// mobile screen
+@media (max-width: 500px) {
+  #main-nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    li {
+      padding: 0 0.6rem;
+    }
+  }
+  // home
+  #home-A .specials,
+  #home-B .stats,
+  #home-C .process,
+  #about-d .testamonial,
+  .items {
+    @include grid1col();
+  }
+  #home {
+    &-A {
+      .specials div {
+        border-bottom: 0.1px dotted $primary-clr;
+        padding-bottom: 1rem;
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  #about {
+    &-a {
+      h2 {
+        margin-top: 2rem;
+      }
+      .section-a-container {
+        grid-template-areas:
+          "a"
+          "b"
+          "c"
+          "d"
+          "e";
+      }
+    }
+    &-c {
+      .about-logo {
+        display: none;
+      }
+    }
+  }
+
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+      }
+    }
+    &-b {
+      .contact-info {
+        @include grid1col();
+      }
+    }
+    &-c {
+      .about-video-container {
+        &::after {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

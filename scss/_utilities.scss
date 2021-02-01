@@ -1,0 +1,106 @@
+.container {
+  max-width: $website-width;
+  padding: 1rem;
+  margin: auto;
+  overflow: hidden;
+}
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  font-family: $ff-secondry;
+  font-weight: 500;
+}
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: #333;
+    background: $primary-clr;
+  }
+  &-light {
+    @extend %btn-shared;
+    color: #333;
+    background: $light-clr;
+  }
+  &-dark {
+    @extend %btn-shared;
+    color: #333;
+    background: $primary-clr;
+  }
+}
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: $primary-clr;
+}
+// background
+.bg {
+  &-main {
+    background: $primary-clr;
+    color: set-text-color($primary-clr);
+  }
+  &-light {
+    background: $light-clr;
+    color: set-text-color($light-clr);
+  }
+  &-medium {
+    background: $medium-clr;
+    color: set-text-color($medium-clr);
+  }
+  &-dark {
+    background: $dark-clr;
+    color: set-text-color($dark-clr);
+  }
+}
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.text-center {
+  text-align: center;
+}
+.bottom-line {
+  width: 50px;
+  height: 3px;
+  background: $primary-clr;
+  margin: 0.3rem auto 1rem;
+  border-radius: 20px;
+}
+.section-title {
+  text-transform: uppercase;
+  margin: 0.5rem auto 0 auto;
+  font-size: 2rem;
+}
+
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
